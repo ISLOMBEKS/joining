@@ -59,10 +59,10 @@ async def _check_member(client, message):
              reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Subscribe My Channel", url=channel_url)
+                    InlineKeyboardButton("➕ Kanalga azo bo'lish", url=channel_url)
                 ],
                 [
-                    InlineKeyboardButton("UnMute Me", callback_data="onUnMuteRequest")
+                    InlineKeyboardButton("✅ Tekshirish", callback_data="onUnMuteRequest")
                 ]
             ]
         )
