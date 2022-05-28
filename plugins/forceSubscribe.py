@@ -69,7 +69,7 @@ async def _check_member(client, message):
           )
           await client.restrict_chat_member(chat_id, user_id, ChatPermissions(can_send_messages=False))
         except ChatAdminRequired:
-          await sent_message.edit("❗ **I am not an admin here.**\n__Make me admin with ban user permission and add me again.\n#Leaving this chat...__")
+          await sent_message.edit("❗ **Men admin emasman.**\n__Meni guruhga qaytadan qo'shib admin qiling.\n#Guruhni tark etish..__")
           await client.leave_chat(chat_id)
       except ChatAdminRequired:
         await client.send_message(chat_id, text=f"❗ **I am not an admin in [channel]({channel_url})**\n__Make me admin in the channel and add me again.\n#Leaving this chat...__")
