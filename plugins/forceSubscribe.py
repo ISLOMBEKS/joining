@@ -105,7 +105,7 @@ async def config(client, message):
               channel_url = await client.export_chat_invite_link(int(input_str))
           else:
               channel_url = f"https://t.me/{input_str}"
-          await message.reply_text(f"✅ **Force Subscribe is Enabled**\n__Force Subscribe is enabled, all the group members have to subscribe this [channel]({channel_url}) in order to send messages in this group.__", disable_web_page_preview=True)
+          await message.reply_text(f"✅ **Bo't ishga tushirilda**\n__Endi [channel]({channel_url}) ga azo bo'lmaganlar bu guruhda xabar yoza olishmaydi.__", disable_web_page_preview=True)
         except UserNotParticipant:
           await message.reply_text(f"❗ **Not an Admin in the Channel**\n__I am not an admin in the [channel]({channel_url}). Add me as a admin in order to enable ForceSubscribe.__", disable_web_page_preview=True)
         except (UsernameNotOccupied, PeerIdInvalid):
