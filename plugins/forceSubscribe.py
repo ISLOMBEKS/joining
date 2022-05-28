@@ -107,7 +107,7 @@ async def config(client, message):
               channel_url = f"https://t.me/{input_str}"
           await message.reply_text(f"✅ **Bo't ishga tushirilda**\n__Endi [channel]({channel_url}) ga azo bo'lmaganlar bu guruhda xabar yoza olishmaydi.__", disable_web_page_preview=True)
         except UserNotParticipant:
-          await message.reply_text(f"❗ **Not an Admin in the Channel**\n__I am not an admin in the [channel]({channel_url}). Add me as a admin in order to enable ForceSubscribe.__", disable_web_page_preview=True)
+          await message.reply_text(f"❗ **Men admin emasman**\n__Meni [channel]({channel_url}) ga admin qilishingiz kerak.__", disable_web_page_preview=True)
         except (UsernameNotOccupied, PeerIdInvalid):
           await message.reply_text(f"❗ **Invalid Channel Username/ID.**")
         except Exception as err:
