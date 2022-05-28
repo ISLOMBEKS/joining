@@ -123,4 +123,4 @@ async def config(client, message):
       else:
         await message.reply_text("❌ **Bo't o'chirildi.**")
   else:
-      await message.reply_text("❗ **Group Creator Required**\n__You have to be the group creator to do that.__")
+      await message.reply_text("❗ **Siz guruh yaratuvchisi emassiz**")
