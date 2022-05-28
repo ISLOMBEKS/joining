@@ -72,7 +72,7 @@ async def _check_member(client, message):
           await sent_message.edit("❗ **Men admin emasman.**\n__Meni guruhga qaytadan qo'shib admin qiling.\n#Guruhni tark etish..__")
           await client.leave_chat(chat_id)
       except ChatAdminRequired:
-        await client.send_message(chat_id, text=f"❗ **Men [channel]({channel_url}) da admin emasman.**\n__Meni kanalga admin qilishib qaytadan guruhga qo'shing.\n#Guruhni tark etish...__")
+        await client.send_message(chat_id, text=f"❗ **Men bu [kanal]({channel_url}) da admin emasman.**\n__Meni kanalga admin qilishib qaytadan guruhga qo'shing.\n#Guruhni tark etish...__")
         await client.leave_chat(chat_id)
 
 
