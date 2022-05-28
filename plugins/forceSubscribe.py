@@ -119,8 +119,8 @@ async def config(client, message):
             channel_url = await client.export_chat_invite_link(int(input_str))
         else:
             channel_url = f"https://t.me/{my_channel}"
-        await message.reply_text(f"✅ **Force Subscribe is enabled in this chat.**\n__For this [Channel]({channel_url})__", disable_web_page_preview=True)
+        await message.reply_text(f"✅ **Bo't ishga tushdi.**\n__Kanal: [Kanal]({channel_url})__", disable_web_page_preview=True)
       else:
-        await message.reply_text("❌ **Force Subscribe is disabled in this chat.**")
+        await message.reply_text("❌ **Bo't o'chirildi.**")
   else:
       await message.reply_text("❗ **Group Creator Required**\n__You have to be the group creator to do that.__")
