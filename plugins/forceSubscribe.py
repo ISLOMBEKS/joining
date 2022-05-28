@@ -88,15 +88,15 @@ async def config(client, message):
         sql.disapprove(chat_id)
         await message.reply_text("❌ **Kanal o'chirib tashlandi.**")
       elif input_str.lower() in ('clear'):
-        sent_message = await message.reply_text('**Unmuting all members who are muted by me...**')
+        sent_message = await message.reply_text('**✅**')
         try:
           for chat_member in (await client.get_chat_members(message.chat.id, filter="restricted")):
             if chat_member.restricted_by.id == (await client.get_me()).id:
                 await client.unban_chat_member(chat_id, chat_member.user.id)
                 time.sleep(1)
-          await sent_message.edit('✅ **UnMuted all members who are muted by me.**')
+          await sent_message.edit('✅ **Barcha azolardan cheklov olindi.**')
         except ChatAdminRequired:
-          await sent_message.edit('❗ **I am not an admin in this chat.**\n__I can\'t unmute members because i am not an admin in this chat make me admin with ban user permission.__')
+          await sent_message.edit('❗ **Men bu guruhda admin emasman**')
       else:
         try:
           await client.get_chat_member(input_str, "me")
