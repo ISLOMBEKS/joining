@@ -33,7 +33,7 @@ async def _onUnMuteRequest(client, cb):
         await client.send_message(chat_id, f"❗ **{cb.from_user.mention} men bu chatda administrator emasman.**\n__#Guruhni tark etish...__")
         await client.leave_chat(chat_id)
       else:
-        await client.answer_callback_query(cb.id, text="❗ Warning: Don't click the button if you can speak freely.", show_alert=True)
+        await client.answer_callback_query(cb.id, text="❗ Ogohlantirish: Agar xabar yubora olsangiz, tugmani bosmang.", show_alert=True)
 
 
 
