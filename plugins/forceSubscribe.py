@@ -109,9 +109,9 @@ async def config(client, message):
         except UserNotParticipant:
           await message.reply_text(f"❗ **Men admin emasman**\n__Meni [channel]({channel_url}) ga admin qilishingiz kerak.__", disable_web_page_preview=True)
         except (UsernameNotOccupied, PeerIdInvalid):
-          await message.reply_text(f"❗ **Invalid Channel Username/ID.**")
+          await message.reply_text(f"❗ **Kanal useri xato/ID.**")
         except Exception as err:
-          await message.reply_text(f"❗ **ERROR:** ```{err}```")
+          await message.reply_text(f"❗ **Xato:** ```{err}```")
     else:
       if sql.fs_settings(chat_id):
         my_channel = sql.fs_settings(chat_id).channel
