@@ -25,11 +25,11 @@ async def _start(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Bo'tdan foydalanish uchun kanalga azo bo'ling!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("Kanal", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
