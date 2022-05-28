@@ -27,7 +27,7 @@ async def _onUnMuteRequest(client, cb):
           except UserNotParticipant:
             await client.answer_callback_query(cb.id, text="❗Kanalga azo bo'ling va "✅Tekshirish" tugmasini bosing.", show_alert=True)
       else:
-        await client.answer_callback_query(cb.id, text="❗ You are muted by admins for other reasons.", show_alert=True)
+        await client.answer_callback_query(cb.id, text="❗ Boshqa sabablarga ko'ra adminlar tomonidan mutelangansiz.", show_alert=True)
     else:
       if not (await client.get_chat_member(chat_id, (await client.get_me()).id)).status == 'administrator':
         await client.send_message(chat_id, f"❗ **{cb.from_user.mention} is trying to UnMute himself but i can't unmute him because i am not an admin in this chat add me as admin again.**\n__#Leaving this chat...__")
