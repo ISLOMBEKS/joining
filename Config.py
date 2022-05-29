@@ -27,6 +27,6 @@ class Messages():
         
        "**Devloped By @UniversalBotsUpdate**"
       ]
-      SC_MSG = "**Hey [{}](tg://user?id={})**\n click on below👇 button to get my source code, for more help ask in my support group👇👇 "
+      SC_MSG = ""
 
-      START_MSG = "**Hey [{}](tg://user?id={})**\n__I can force members to join a specific channel before writing messages in the group.\nLearn more at /help__"
+      START_MSG = "**Hey [{}](tg://user?id={})**\n__Men kanalingizda azo bo'lmagan odamlarni guruhingizda yozdirmayman."
