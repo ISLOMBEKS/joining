@@ -19,14 +19,19 @@ class Messages():
       HELP_MSG = [
         ".",
 
-        "**Men guruhda sizning kanalingizga azol bo'lmagan odamlarni azo bo'lmagunlaricha yozdirmayman, azo bo'lganidan keyin ular ✅ Tekshirish tugmasini bosishlari kerak",
+        "**Men guruhda sizning kanalingizga azo bo'lmagan odamlarni azo bo'lmagunlaricha yozdirmayman, azo bo'lganidan keyin ular ✅ Tekshirish tugmasini bosishlari kerak",
         
         "**Meni faqat guruh yaratuvchisi boshqara oladi",
         
-        "**Commmands**\n__/ForceSubscribe - Ulangan kanalni tekshirish.\n/ForceSubscribe off - Kanalni o'chirish.\n/ForceSubscribe {username yoki kanal ID} - Kanal ulash.\n/ForceSubscribe clear - Barchadan muteni olish.__",
+        "**Commmands**\n__/ForceSubscribe - Ulangan kanalni tekshirish.\n/ForceSubscribe off - Kanalni o'chirish.\n/ForceSubscribe {username yoki kanal ID} - Kanal ulash.\n/ForceSubscribe clear - Barchadan muteni olish.__"
         
-       "**Devloped By @UniversalBotsUpdate**"
-      ]
+            ]
       SC_MSG = ""
 
-      START_MSG = "**Hey [{}](tg://user?id={})**\n__Men kanalingizda azo bo'lmagan odamlarni guruhingizda yozdirmayman."
+      START_MSG = ["**👋Salom [{}](tg://user?id={})**\n__Men kanalingizda azo bo'lmagan odamlarni guruhingizda yozdirmayman.",
+
+                   "**Men guruhda sizning kanalingizga azo bo'lmagan odamlarni azo bo'lmagunlaricha yozdirmayman, azo bo'lganidan keyin ular ✅ Tekshirish tugmasini bosishlari kerak",
+        
+                   "**Meni faqat guruh yaratuvchisi boshqara oladi",
+        
+                   "**Commmands**\n__/ForceSubscribe - Ulangan kanalni tekshirish.\n/ForceSubscribe off - Kanalni o'chirish.\n/ForceSubscribe {username yoki kanal ID} - Kanal ulash.\n/ForceSubscribe clear - Barchadan muteni olish.__"]
