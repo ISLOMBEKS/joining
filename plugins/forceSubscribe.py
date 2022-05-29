@@ -25,7 +25,7 @@ async def _onUnMuteRequest(client, cb):
             if cb.message.reply_to_message.from_user.id == user_id:
               await cb.message.delete()
           except UserNotParticipant:
-            await client.answer_callback_query(cb.id, text="❗Kanalga azo bo'ling va "✅Tekshirish" tugmasini bosing.", show_alert=True)
+            await client.answer_callback_query(cb.id, text="❗Kanalga azo bo'ling va ✅Tekshirish tugmasini bosing.", show_alert=True)
       else:
         await client.answer_callback_query(cb.id, text="❗ Boshqa sabablarga ko'ra adminlar tomonidan mutelangansiz.", show_alert=True)
     else:
